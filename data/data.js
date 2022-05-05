@@ -1,0 +1,58 @@
+export const datos = [
+  {
+    id: 1,
+    img: "../images/item-1.jpg",
+    nombreProducto: "Tennis Lacoste",
+    categoria: "MASCULINO",
+    precio: 75000,
+  },
+  {
+    id: 2,
+    img: "../images/item-3.jpg",
+    nombreProducto: "Tennis Adidas",
+    categoria: "FEMENINO",
+    precio: 75000,
+  },
+  {
+    id: 3,
+    img: "../images/item-2.jpg",
+    nombreProducto: "Tennis Reebok",
+    categoria: "MASCULINO",
+    precio: 100000,
+  },
+  {
+    id: 4,
+    img: "../images/item-4.jpg",
+    nombreProducto: "Tennis Converse",
+    categoria: "FEMENINO",
+    precio: 75000,
+  },
+  {
+    id: 5,
+    img: "../images/item-5.jpg",
+    nombreProducto: "Reloj Diesel",
+    categoria: "MASCULINO",
+    precio: 50000,
+  },
+  {
+    id: 6,
+    img: "../images/item-7.jpg",
+    nombreProducto: "Reloj Lotus",
+    categoria: "FEMENINO",
+    precio: 50000,
+  },
+  {
+    id: 7,
+    img: "../images/item-6.jpg",
+    nombreProducto: "Reloj Hublot",
+    categoria: "MASCULINO",
+    precio: 50000,
+  },
+  {
+    id: 8,
+    img: "../images/item-8.jpg",
+    nombreProducto: "Reloj Quartz",
+    categoria: "FEMENINO",
+    precio: 50000,
+  },
+];
