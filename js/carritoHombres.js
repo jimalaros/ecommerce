@@ -1,11 +1,11 @@
 import { navbar } from "../modules/navbar.js";
 import { footer } from "../modules/footer.js";
+import { productosDOM } from "../modules/productosDOM.js";
 
 const productos = JSON.parse(localStorage.getItem("productosHombres"));
 
-const templateProd = document.getElementById("template-prod").content;
-const contenedorProd = document.querySelector(".contenedor-productos");
 const fragment = document.createDocumentFragment();
+const contenedorProd = document.querySelector(".contenedor-productos");
 
 const containerNavbar = document.getElementById("containerNav");
 const containerFooter = document.getElementById("containerFooter");
@@ -13,22 +13,7 @@ const containerFooter = document.getElementById("containerFooter");
 navbar(containerNavbar);
 footer(containerFooter);
 
-// TODO LO RELACIONADO A AGREGAR LOS PRODUCTOS AL DOM
-Object.values(productos).forEach((producto) => {
-  templateProd.querySelector(".div-info .nombre-prod").textContent =
-    producto.nombreProducto;
-  templateProd.querySelector(".div-precio-boton .precio").textContent =
-    producto.precio;
-  templateProd
-    .querySelector(".contenedor-img img")
-    .setAttribute("alt", producto.nombreProducto);
-  templateProd
-    .querySelector(".contenedor-img img")
-    .setAttribute("src", producto.img);
-  const clone = templateProd.cloneNode(true);
-  fragment.appendChild(clone);
-});
-contenedorProd.appendChild(fragment);
+contenedorProd.appendChild(productosDOM(productos));
 
 // TODO LO RELACIONADO AL CARRITO DE COMPRA
 let carrito = {};
