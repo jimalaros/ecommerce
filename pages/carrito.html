@@ -14,17 +14,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">JAAO</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="./pages/carrito.html">Productos</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="containerNav"></div>
 
     <h1>PRODUCTOS</h1>
 
@@ -55,14 +45,14 @@
     <!-- Template de las filas -->
     <template id="agregar-producto-al-carro">
       <tr>
-        <td id="producto">Papas Fritas</td>
+        <td id="producto"></td>
         <td>
           <button id="menos-cantidad" class="button">-</button
           ><span id="cant">1</span
           ><button id="mas-cantidad" class="button">+</button>
         </td>
-        <td class="precio-tabla" id="precio-uni">3.50</td>
-        <td class="precio-tabla" id="precio-total-prod">3.50</td>
+        <td class="precio-tabla" id="precio-uni"></td>
+        <td class="precio-tabla" id="precio-total-prod"></td>
       </tr>
     </template>
     <!-- Template del footer de la tabla -->
@@ -72,9 +62,7 @@
           <button id="vaciar-tabla" class="button">Vaciar carrito</button>
         </td>
         <td class="negrita">Precio Total</td>
-        <td id="total-a-pagar" class="precio-tabla border-bottom-right negrita">
-          5.00
-        </td>
+        <td id="total-a-pagar" class="precio-tabla border-bottom-right negrita"></td>
       </tr>
     </template>
 
@@ -94,25 +82,13 @@
         </div>
         <!-- Precio y Agregar al carrito -->
         <div class="div-precio-boton">
-          <p class="precio">precio Producto</p>
+          <p class="precio">Precio Producto</p>
           <button class="boton">Agregar</button>
         </div>
       </article>
     </template>
 
-    <div><br><br>
-      <footer style="background-color: #fdfdfd">
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          Jimmy Arango
-          <a class="text-dark" href="https://github.com/jimalaros"
-            >github</a
-          >
-        </div>
-      </footer>
-    </div>
+    <div id="containerFooter"></div>
 
     <script src="../js/carrito.js" type="module"></script>
   </body>

@@ -1,8 +1,17 @@
+import { navbar } from "../modules/navbar.js";
+import { footer } from "../modules/footer.js";
+
 const productos = JSON.parse(localStorage.getItem("productosMujeres"));
 
 const templateProd = document.getElementById("template-prod").content;
 const contenedorProd = document.querySelector(".contenedor-productos");
 const fragment = document.createDocumentFragment();
+
+const containerNavbar = document.getElementById("containerNav");
+const containerFooter = document.getElementById("containerFooter");
+
+navbar(containerNavbar);
+footer(containerFooter);
 
 // TODO LO RELACIONADO A AGREGAR LOS PRODUCTOS AL DOM
 Object.values(productos).forEach((producto) => {
